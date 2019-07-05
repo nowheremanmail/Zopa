@@ -1,0 +1,23 @@
+apply plugin: 'idea'
+apply plugin: 'scala'
+apply plugin: 'application'
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.12'
+
+    testCompile 'junit:junit:4.+'
+    testCompile group: 'org.scalatest', name: 'scalatest_2.11', version: '3.0.4'
+}
+
+version '1.0.0-SNAPSHOT'
+sourceCompatibility = 1.8
+group 'com.dag'
+mainClassName = 'com.dag.testz.Main'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.1'
+}

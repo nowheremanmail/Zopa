@@ -1,0 +1,13 @@
+* to create executable
+
+    >./gradlew distZip
+
+    this creates a zip file called ./build/distributions/Test-1.0.0-SNAPSHOT.zip
+
+    unzip this file into another folder (for example .)
+
+    >unzip Test-1.0.0-SNAPSHOT.zip
+
+* to execute program using ./Test-1.0.0-SNAPSHOT/bin/Test <data file> <loan>
+
+    >./Test-1.0.0-SNAPSHOT/bin/Test data/MarketData.csv 1000
